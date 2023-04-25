@@ -25,8 +25,9 @@ function renderProductosCarrito() {
         </tr>`;
         salida += `</table>`;
     } else {
-        salida = alert("te esperamos en el inicio para que compres lo que quieras!!!")
-    }
+        salida = `<div class="alert alert-danger text-center" role="alert">No se agregaron Productos en el Carrito!</div>
+        `
+        }
 
     document.getElementById("productos").innerHTML = salida;
 }
